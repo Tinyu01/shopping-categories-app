@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Categories</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        nav a { margin-right: 10px; }
+        ul { list-style-type: none; padding-left: 20px; }
+        .category { cursor: pointer; color: blue; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#food">Food Items</a>
+        <a href="#electronics">Electronics Items</a>
+    </nav>
+    <h1 id="top">Shopping Categories</h1>
+    <div id="categories"></div>
+    <h2>Item Descriptions</h2>
+    <div id="descriptions"></div>
+    <h2>Add New Category</h2>
+    <form id="addCategoryForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="parent">Parent Category:</label>
+        <select id="parent">
+            <option value="">None</option>
+        </select><br>
+        <label for="description">Description:</label>
+        <textarea id="description"></textarea><br>
+        <button type="submit">Add Category</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
